@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-#RUN chmod 777 ./run_web.sh
+RUN chmod 777 ./run_web.sh
 #EXPOSE 8000
 
 CMD ["./run_web.sh"]
