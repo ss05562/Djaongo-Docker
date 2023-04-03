@@ -19,7 +19,7 @@ services:
     build: .
     command: ./run_web.sh
     ports:
-      - "8080:8080"
+      - 8080:8080
     depends_on:
       - dbPostgres
     links:                   #We can find Docker links still in use. However, Docker Compose deprecates it since version 2 because of the introduction of the network.
